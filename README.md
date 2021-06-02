@@ -27,9 +27,9 @@ Python >= 3.6
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+pip install git+https://github.com/jaswdr/brasil-api.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/jaswdr/brasil-api.git`)
 
 Then import the package:
 ```python
@@ -72,7 +72,7 @@ configuration = brasil_api.Configuration(
 # Enter a context with an instance of the API client
 with brasil_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = banks_api.BANKSApi(api_client)
+    api_instance = banks_api.BanksApi(api_client)
     code = "code_example" # str | Código do banco
 
     try:
@@ -80,7 +80,7 @@ with brasil_api.ApiClient(configuration) as api_client:
         api_response = api_instance.banks_v1_code_get(code)
         pprint(api_response)
     except brasil_api.ApiException as e:
-        print("Exception when calling BANKSApi->banks_v1_code_get: %s\n" % e)
+        print("Exception when calling BanksApi->banks_v1_code_get: %s\n" % e)
 ```
 
 ## Documentation for API Endpoints
@@ -89,8 +89,8 @@ All URIs are relative to *https://brasilapi.com.br/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*BANKSApi* | [**banks_v1_code_get**](docs/BANKSApi.md#banks_v1_code_get) | **GET** /banks/v1/{code} | Busca as informações de um banco a partir de um código
-*BANKSApi* | [**banks_v1_get**](docs/BANKSApi.md#banks_v1_get) | **GET** /banks/v1 | Retorna informações de todos os bancos do Brasil
+*BanksApi* | [**banks_v1_code_get**](docs/BanksApi.md#banks_v1_code_get) | **GET** /banks/v1/{code} | Busca as informações de um banco a partir de um código
+*BanksApi* | [**banks_v1_get**](docs/BanksApi.md#banks_v1_get) | **GET** /banks/v1 | Retorna informações de todos os bancos do Brasil
 *CEPApi* | [**cep_v1_cep_get**](docs/CEPApi.md#cep_v1_cep_get) | **GET** /cep/v1/{cep} | Busca por CEP com múltiplos providers de fallback.
 *CEPV2Api* | [**cep_v2_cep_get**](docs/CEPV2Api.md#cep_v2_cep_get) | **GET** /cep/v2/{cep} | Busca por CEP com múltiplos providers de fallback v2.
 *CNPJApi* | [**cnpj_v1_cnpj_get**](docs/CNPJApi.md#cnpj_v1_cnpj_get) | **GET** /cnpj/v1/{cnpj} | Busca por CNPJ na API Minha Receita.

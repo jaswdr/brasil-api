@@ -1,11 +1,11 @@
-# brasil_api.BANKSApi
+# brasil_api.BanksApi
 
 All URIs are relative to *https://brasilapi.com.br/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**banks_v1_code_get**](BANKSApi.md#banks_v1_code_get) | **GET** /banks/v1/{code} | Busca as informações de um banco a partir de um código
-[**banks_v1_get**](BANKSApi.md#banks_v1_get) | **GET** /banks/v1 | Retorna informações de todos os bancos do Brasil
+[**banks_v1_code_get**](BanksApi.md#banks_v1_code_get) | **GET** /banks/v1/{code} | Busca as informações de um banco a partir de um código
+[**banks_v1_get**](BanksApi.md#banks_v1_get) | **GET** /banks/v1 | Retorna informações de todos os bancos do Brasil
 
 
 # **banks_v1_code_get**
@@ -31,7 +31,7 @@ configuration = brasil_api.Configuration(
 # Enter a context with an instance of the API client
 with brasil_api.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = banks_api.BANKSApi(api_client)
+    api_instance = banks_api.BanksApi(api_client)
     code = "code_example" # str | Código do banco
 
     # example passing only required values which don't have defaults set
@@ -40,7 +40,7 @@ with brasil_api.ApiClient() as api_client:
         api_response = api_instance.banks_v1_code_get(code)
         pprint(api_response)
     except brasil_api.ApiException as e:
-        print("Exception when calling BANKSApi->banks_v1_code_get: %s\n" % e)
+        print("Exception when calling BanksApi->banks_v1_code_get: %s\n" % e)
 ```
 
 
@@ -95,7 +95,7 @@ configuration = brasil_api.Configuration(
 # Enter a context with an instance of the API client
 with brasil_api.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = banks_api.BANKSApi(api_client)
+    api_instance = banks_api.BanksApi(api_client)
 
     # example, this endpoint has no required or optional parameters
     try:
@@ -103,7 +103,7 @@ with brasil_api.ApiClient() as api_client:
         api_response = api_instance.banks_v1_get()
         pprint(api_response)
     except brasil_api.ApiException as e:
-        print("Exception when calling BANKSApi->banks_v1_get: %s\n" % e)
+        print("Exception when calling BanksApi->banks_v1_get: %s\n" % e)
 ```
 
 

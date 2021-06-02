@@ -6,7 +6,7 @@
 # raise a `RecursionError`.
 # In order to avoid this, import only the API that you directly need like:
 #
-#   from .api.banks_api import BANKSApi
+#   from .api.banks_api import BanksApi
 #
 # or import this package, but before doing it, use:
 #
@@ -14,7 +14,7 @@
 #   sys.setrecursionlimit(n)
 
 # Import APIs into API package:
-from brasil-api.banks_api import BANKSApi
+from brasil-api.banks_api import BanksApi
 from brasil-api.cep_api import CEPApi
 from brasil-api.cep_v2_api import CEPV2Api
 from brasil-api.cnpj_api import CNPJApi

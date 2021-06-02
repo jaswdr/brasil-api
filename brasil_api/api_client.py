@@ -761,7 +761,7 @@ class Endpoint(object):
         """ This method is invoked when endpoints are called
         Example:
 
-        api_instance = BANKSApi()
+        api_instance = BanksApi()
         api_instance.banks_v1_code_get  # this is an instance of the class Endpoint
         api_instance.banks_v1_code_get()  # this invokes api_instance.banks_v1_code_get.__call__()
         which then invokes the callable functions stored in that endpoint at
