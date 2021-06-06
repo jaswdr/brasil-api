@@ -11,7 +11,7 @@
 import unittest
 
 import brasil_api
-from brasil-api.feriados_nacionais_api import FeriadosNacionaisApi  # noqa: E501
+from brasil_api.api.feriados_nacionais_api import FeriadosNacionaisApi  # noqa: E501
 
 
 class TestFeriadosNacionaisApi(unittest.TestCase):

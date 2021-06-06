@@ -17,7 +17,7 @@ Busca por CNPJ na API Minha Receita.
 ```python
 import time
 import brasil_api
-from brasil_api import cnpj_api
+from brasil_api.api import cnpj_api
 from brasil_api.model.empresa_v1 import EmpresaV1
 from pprint import pprint
 # Defining the host is optional and defaults to https://brasilapi.com.br/api

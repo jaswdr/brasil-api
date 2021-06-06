@@ -18,7 +18,7 @@ Busca as informações de um banco a partir de um código
 ```python
 import time
 import brasil_api
-from brasil_api import banks_api
+from brasil_api.api import banks_api
 from brasil_api.model.bank_v1 import BankV1
 from pprint import pprint
 # Defining the host is optional and defaults to https://brasilapi.com.br/api
@@ -82,7 +82,7 @@ Retorna informações de todos os bancos do Brasil
 ```python
 import time
 import brasil_api
-from brasil_api import banks_api
+from brasil_api.api import banks_api
 from brasil_api.model.bank_v1 import BankV1
 from pprint import pprint
 # Defining the host is optional and defaults to https://brasilapi.com.br/api

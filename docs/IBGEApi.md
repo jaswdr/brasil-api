@@ -18,7 +18,7 @@ Busca as informações de um um estado a partir da sigla ou código
 ```python
 import time
 import brasil_api
-from brasil_api import ibge_api
+from brasil_api.api import ibge_api
 from brasil_api.model.ibgev1 import IBGEV1
 from pprint import pprint
 # Defining the host is optional and defaults to https://brasilapi.com.br/api
@@ -82,7 +82,7 @@ Retorna informações de todos estados do Brasil
 ```python
 import time
 import brasil_api
-from brasil_api import ibge_api
+from brasil_api.api import ibge_api
 from brasil_api.model.ibgev1 import IBGEV1
 from pprint import pprint
 # Defining the host is optional and defaults to https://brasilapi.com.br/api

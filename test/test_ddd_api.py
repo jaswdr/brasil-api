@@ -11,7 +11,7 @@
 import unittest
 
 import brasil_api
-from brasil-api.ddd_api import DDDApi  # noqa: E501
+from brasil_api.api.ddd_api import DDDApi  # noqa: E501
 
 
 class TestDDDApi(unittest.TestCase):

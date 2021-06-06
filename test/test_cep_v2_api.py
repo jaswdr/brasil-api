@@ -11,7 +11,7 @@
 import unittest
 
 import brasil_api
-from brasil-api.cep_v2_api import CEPV2Api  # noqa: E501
+from brasil_api.api.cep_v2_api import CEPV2Api  # noqa: E501
 
 
 class TestCEPV2Api(unittest.TestCase):

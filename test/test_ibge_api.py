@@ -11,7 +11,7 @@
 import unittest
 
 import brasil_api
-from brasil-api.ibge_api import IBGEApi  # noqa: E501
+from brasil_api.api.ibge_api import IBGEApi  # noqa: E501
 
 
 class TestIBGEApi(unittest.TestCase):

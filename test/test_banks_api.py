@@ -11,14 +11,14 @@
 import unittest
 
 import brasil_api
-from brasil-api.banks_api import BANKSApi  # noqa: E501
+from brasil_api.api.banks_api import BanksApi  # noqa: E501
 
 
-class TestBANKSApi(unittest.TestCase):
-    """BANKSApi unit test stubs"""
+class TestBanksApi(unittest.TestCase):
+    """BanksApi unit test stubs"""
 
     def setUp(self):
-        self.api = BANKSApi()  # noqa: E501
+        self.api = BanksApi()  # noqa: E501
 
     def tearDown(self):
         pass

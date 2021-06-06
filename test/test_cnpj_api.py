@@ -11,7 +11,7 @@
 import unittest
 
 import brasil_api
-from brasil-api.cnpj_api import CNPJApi  # noqa: E501
+from brasil_api.api.cnpj_api import CNPJApi  # noqa: E501
 
 
 class TestCNPJApi(unittest.TestCase):
