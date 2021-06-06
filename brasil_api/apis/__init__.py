@@ -14,10 +14,10 @@
 #   sys.setrecursionlimit(n)
 
 # Import APIs into API package:
-from brasil-api.banks_api import BanksApi
-from brasil-api.cep_api import CEPApi
-from brasil-api.cep_v2_api import CEPV2Api
-from brasil-api.cnpj_api import CNPJApi
-from brasil-api.ddd_api import DDDApi
-from brasil-api.feriados_nacionais_api import FeriadosNacionaisApi
-from brasil-api.ibge_api import IBGEApi
+from brasil_api.banks_api import BanksApi
+from brasil_api.cep_api import CEPApi
+from brasil_api.cep_v2_api import CEPV2Api
+from brasil_api.cnpj_api import CNPJApi
+from brasil_api.ddd_api import DDDApi
+from brasil_api.feriados_nacionais_api import FeriadosNacionaisApi
+from brasil_api.ibge_api import IBGEApi

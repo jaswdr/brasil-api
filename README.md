@@ -59,7 +59,7 @@ Please follow the [installation procedure](#installation--usage) and then run th
 import time
 import brasil_api
 from pprint import pprint
-from brasil-api import banks_api
+from brasil_api import banks_api
 from brasil_api.model.bank_v1 import BankV1
 # Defining the host is optional and defaults to https://brasilapi.com.br/api
 # See configuration.py for a list of all supported configuration parameters.

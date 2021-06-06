@@ -17,7 +17,7 @@ Busca por CEP com múltiplos providers de fallback.
 ```python
 import time
 import brasil_api
-from brasil-api import cep_api
+from brasil_api import cep_api
 from brasil_api.model.cepv1 import CEPV1
 from pprint import pprint
 # Defining the host is optional and defaults to https://brasilapi.com.br/api

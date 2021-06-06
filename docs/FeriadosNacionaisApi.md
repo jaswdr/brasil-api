@@ -19,7 +19,7 @@ Calcula os feriados móveis baseados na Páscoa e adiciona os feriados fixos
 ```python
 import time
 import brasil_api
-from brasil-api import feriados_nacionais_api
+from brasil_api import feriados_nacionais_api
 from brasil_api.model.feriado_v1 import FeriadoV1
 from pprint import pprint
 # Defining the host is optional and defaults to https://brasilapi.com.br/api

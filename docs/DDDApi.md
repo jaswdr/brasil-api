@@ -17,7 +17,7 @@ Retorna estado e lista de cidades por DDD
 ```python
 import time
 import brasil_api
-from brasil-api import ddd_api
+from brasil_api import ddd_api
 from brasil_api.model.dddv1 import DDDV1
 from pprint import pprint
 # Defining the host is optional and defaults to https://brasilapi.com.br/api
